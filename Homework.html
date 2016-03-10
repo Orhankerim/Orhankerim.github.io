@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Biological Sciences</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   
+   
+                <style>
+                body {
+                    background-color: bisque; 
+                }
+                
+            #outer {
+                
+                position: absolute;
+                top:45%;
+                left: 45%;
+                background-color:lightblue ;
+                width: 16em;
+                height: 2em;
+            }
+          
+            #inner {
+                top:45%;
+                left:45%;
+                clear: both ;
+                vertical-align: text-top;
+                text-align: center;
+                background-color: aquamarine;
+                color: darkcyan;
+                cursor: pointer;
+            }
+            
+        </style>
+    </head>
+     <body> 
+        <table id="org"><tr><h1><font> <p><i> Welcome Biological Sciences</i> </p> </font></h1></tr>
+      </body> 
+        <div id="outer">
+            <span id="inner">
+                 <a style="color:white;" href ="http://www.nature.com/siteindex/index.html" target="blank"> All of the biological researches in there</a> 
+            </span>
+        </div>
+        <script>
+            $('#inner').hover(
+                function() {
+                    $(this).css('background-color',"greenyellow");
+                }, 
+                function() {
+                    $(this).css("background-color","cyan");
+                }
+            );
+    
+            $('#inner').click(
+                function() {
+                    window.location = "https://www.sciencedaily.com/news/plants_animals/biology/";
+                }
+            );
+    </script>
+     <script> 
+ $(document).ready(function(){
+    $("button").click(function(){
+         var div = $("div");
+         div.animate({height: '100px', opacity: '0.4'}, "slow");
+        div.animate({width: '200px', opacity: '0.8'}, "slow");
+        div.animate({height: '50px', opacity: '0.4'}, "slow");
+        div.animate({width: '270px', opacity: '0.8'}, "slow");
+        });
+    });
+</script> 
+     </head>
+    
+<body>
+
+    <button> Start Information </button> <times> 11.03.2016</times>
+
+<div style="background: lightcyan;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
